@@ -48,12 +48,6 @@ class _MainScreenState extends State<MainScreen> with SingleTickerProviderStateM
         ),
         centerTitle: true,
         elevation: 0,
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.refresh),
-            onPressed: _loadData,
-          ),
-        ],
       ),
       body: Consumer<RentalProvider>(
         builder: (context, provider, child) {
